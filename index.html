@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/style.css">
+        <meta charset="UTF-8">
+    </head>
+    <body onload="hello()">
+        <div class="govno">
+            <h1 class="govno__form">Форма</h1>
+            <div class="govno__input-container">
+                <span class="govno__input-text">Почта</span>
+                <input class="govno__input" type="text" id="mail">
+            </div>
+            <div class="govno__input-container">
+                <span class="govno__input-text">ФИО</span>
+                <input class="govno__input" type="text" id="fio">
+            </div>
+            <div class="govno__gender">
+                <span class="govno__gender-text">Пол</span>
+                <span>M</span>
+                <input class="govno__gender-radio" type="radio" name="gender" value="М">
+                <span>Ж</span>
+                <input class="govno__gender-radio" type="radio" name="gender" value="Ж">
+                <span>Г</span>
+                <input class="govno__gender-radio" type="radio" name="gender" value="Г">
+            </div>
+            <div class="govno__country">
+                <span class="govno__country-text">Страна</span>
+                <select class="govno__country-select" id="country">
+                    <option class="govno__country-select-op">Россия</option>
+                    <option class="govno__country-select-op">Украина</option>
+                    <option class="govno__country-select-op">Казахстан</option>
+                </select>
+            </div>
+            <button onclick="govno()" class="govno__button">Регистрация</button>
+
+        </div>
+        <script src="js/script.js"></script>
+    </body>
+</html>

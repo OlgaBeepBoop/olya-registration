@@ -1,0 +1,38 @@
+@font-face {
+    font-family: cock;
+    src: url(fonts/Roboto-Regular.ttf);
+}
+
+body {
+    background-color: rgba(192, 179, 179, 0.616);
+    font-family: cock;
+    margin: 0 auto;
+}
+
+.govno {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    background-color: rgba(255, 234, 228, 0.911);
+    width: 500px;
+    margin-left: 700px;
+    height: 300px;
+}
+
+.govno__form {
+    display: flex;
+    font-size: 40px;
+    color: rgb(27, 19, 19);
+    
+}
+
+.govno__mail {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.govno__mail-text {
+    font-size: 27px;
+}
