@@ -34,6 +34,36 @@ man = (genders) => {
     return g;
 }
 
+validation = (user) => {
+    if (user.mail === "" || user.fio === "") {
+ 
+         if (user.mail === "") {
+            const wrong =  document.getElementById("mail");
+            wrong.classList.add("govno__wrong");
+         } else {
+            const mail = document.getElementById("mail");
+            mail.classList.remove("govno__wrong");
+         }
+ 
+         if (user.fio === "") {
+            const wrong =  document.getElementById("fio");
+            wrong.classList.add("govno__wrong");
+         } else {
+            const fio = document.getElementById("fio");
+            fio.classList.remove("govno__wrong");
+         }
+         return false;
+    }
+    else {
+        const mail = document.getElementById("mail");
+        mail.classList.remove("govno__wrong");
+        const fio = document.getElementById("fio");
+        fio.classList.remove("govno__wrong");
+        return true
+    }
+ 
+ };
+
 govno = () => {
   const mail = document.getElementById("mail").value;
   const fio = document.getElementById("fio").value;
@@ -41,6 +71,9 @@ govno = () => {
   const genders = document.getElementsByName("gender");
   const gender = man(genders);
   const user = {mail: mail, fio: fio, country: country, gender: gender}
+  const val = validation(user);
 
-  console.log(user);  
+  console.log(user, val);  
 }
+
+

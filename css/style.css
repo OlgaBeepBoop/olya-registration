@@ -16,7 +16,7 @@ body {
     flex-direction: column;
     background-color: rgba(255, 234, 228, 0.911);
     width: 500px;
-    margin-left: 700px;
+    margin: 0 auto;
     height: 300px;
 }
 
@@ -35,4 +35,9 @@ body {
 
 .govno__mail-text {
     font-size: 27px;
+}
+
+.govno__wrong {
+    border-color: rgb(233, 17, 17);
+    background-color: rgb(250, 199, 199);
 }
