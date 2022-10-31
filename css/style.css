@@ -41,3 +41,53 @@ body {
     border-color: rgb(233, 17, 17);
     background-color: rgb(250, 199, 199);
 }
+
+.wrong__text {
+    color: rgb(233, 17, 17);
+}
+
+.hidden {
+    display: none;
+}
+
+.user-govna {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.user-govna__user {
+    font-size: 18px;
+    color: rgb(7, 91, 19);
+}
+
+.user-govna__user__frame {
+    border: 2px solid rgb(18, 61, 11); 
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    text-align: center;
+    padding: 15px;
+    justify-content: space-between;
+}
+
+.user-govna__user__button {
+    background-color: transparent;
+    border: none;
+    color: rgb(18, 61, 11);
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.tmpl {
+    background-color: rgb(15, 236, 45);
+    padding: 15px;
+    
+}
+
+.tmpl-text {
+   font-size: 25px;
+}

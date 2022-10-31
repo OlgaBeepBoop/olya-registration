@@ -6,15 +6,17 @@
     </head>
     <body onload="hello()">
         <div class="govno">
-            <h1 class="govno__form">Форма</h1>
+            <h1 class="govno__form">ФоРмА</h1>
             <div class="govno__input-container">
                 <span class="govno__input-text">Почта</span>
                 <input class="govno__input" type="text" id="mail">
             </div>
+            <span class="wrong__text hidden" id="mail-error">Поле не заполнено!</span>
             <div class="govno__input-container">
                 <span class="govno__input-text">ФИО</span>
                 <input class="govno__input" type="text" id="fio">
             </div>
+            <span class="wrong__text hidden" id="fio-error">Поле не заполнено!</span>
             <div class="govno__gender">
                 <span class="govno__gender-text">Пол</span>
                 <span>M</span>
@@ -32,8 +34,16 @@
                     <option class="govno__country-select-op">Казахстан</option>
                 </select>
             </div>
-            <button onclick="govno()" class="govno__button">Регистрация</button>
-
+            <button onclick="createUser()" class="govno__button">Регистрация</button>
+            <button onclick="createTmpl()" class="govno__button">Шаблон</button>
+        </div>
+        <div class="user-govna" id="userGovna">
+            <h1 class="user-govna__text">ПоЛьЗоВаТеЛи</h1>
+            <template id="tmpl">
+                <div class="tmpl">
+                    <span class="tmpl-text">Хуйня какая-то</span>
+                </div>
+            </template>
         </div>
         <script src="js/script.js"></script>
     </body>
